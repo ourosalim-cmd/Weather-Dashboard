@@ -1,0 +1,21 @@
+#title{
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.outer{
+    height: auto;
+    /* background-color: lightgray; */
+    border: solid white;
+}
+.inside{
+     /* border: solid lightgray; */
+     height: auto;
+}
+#search{
+    font-style: unset;
+}
+#now{
+    display: block;
+}

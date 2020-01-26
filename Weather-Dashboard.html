@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+     <link rel="stylesheet" href="style.css">
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="script.js"></script> -->
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark" >
+        <!-- Navbar content -->
+        <h1 id="title"> Weather Dashboard</h1>
+      </nav>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3 bg-light outer">
+                <form class="form-inline my-2 my-lg-0">
+                    <h5>Search for a City: </h5>
+                    <input class="form-control mr-sm-0" type="search" id="search" aria-label="Search">
+                    <button class="btn bg-primary my-2 my-sm-0" type="submit" data-input ="search"><i class="fa fa-search text-white"></i></button>
+                  </form>
+            </div>
+            <div class="col-md-9 bg-light outer">
+                <div class="row inside" id="now">
+                    <h3 id="cityName"></h3>
+                    <p id="temp"></p>
+                    <p id="humidity"></p>
+                    <p id="wind"></p>
+                    <p id="uv"></p>
+                    <p class="icon"></p>
+                </div>
+                <div class="row inside" id="5day">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                            <h5 class="card-title today">Card title</h5>
+                            <img src="..." class="" alt="...">
+                            <p class="card-text">This content is a little bit longer.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="card-body">
+                            <h5 class="card-title day2"> Card title</h5>
+                            <img src="..." class="" alt="...">
+                            <p class="card-text ">This card has supporting text below </p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="card-body">
+                            <h5 class="card-title day3">Card title</h5>
+                            <img src="..." class="" alt="...">
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="card-body">
+                            <h5 class="card-title day4">Card title</h5>
+                            <img src="..." class="" alt="...">
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="card-body">
+                            <h5 class="card-title day5">Card title</h5>
+                            <img src="..." class="" alt="...">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        <div>
+      </div>
+      <!--
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    ----------------
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+-------------------------------------
+<div class="card-deck">
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
+
+--------------------------------------------
+
+      -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- <script src="semantic/dist/semantic.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
