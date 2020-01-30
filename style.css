@@ -19,3 +19,14 @@
 #now{
     display: block;
 }
+.card{
+    width: 30%;
+    text-align: center;
+}
+.listCard{
+    width: 100%; /*18rem;*/
+    margin-top: 20px;
+}
+.list-group-item{
+    font-size: unset;
+}
