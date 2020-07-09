@@ -13,4 +13,4 @@ This repo consists of front end web files. To run this app locally after cloning
 
 ## Credits
 
-Made with Aboudou Ouro-Salim (https://github.com/ourosalim-cmd)
+Made Aboudou Ouro-Salim (https://github.com/ourosalim-cmd)
