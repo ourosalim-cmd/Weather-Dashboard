@@ -4,7 +4,7 @@ Weather is mostly uncertain. So, before I go about my day, I would like to know 
 
 ## Description
 
-This weather dashboard application presents local weather to the user at the landing page, and allow the user to find current weather conditions and five days forecast for any cities in the world using https://openweathermap.org/api and https://ipfind.com/ APIs. The site is hosted on GitHub at https://ourosalim-cmd.github.io/Weather-Dashboard/. The code can be found here https://github.com/ourosalim-cmd/Weather-Dashboard
+This weather dashboard application presents local weather to the user at the landing page using https://ipfind.com/ API, and allow the user to find current weather conditions and five days forecast for any cities in the world using https://openweathermap.org/api API. The site is hosted on GitHub at https://ourosalim-cmd.github.io/Weather-Dashboard/. The code can be found here https://github.com/ourosalim-cmd/Weather-Dashboard
 
 
 ## Installation
@@ -13,4 +13,4 @@ This repo consists of front end web files. To run this app locally after cloning
 
 ## Credits
 
-Made Aboudou Ouro-Salim (https://github.com/ourosalim-cmd)
+Made By Aboudou Ouro-Salim (https://github.com/ourosalim-cmd)
